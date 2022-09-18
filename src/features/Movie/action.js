@@ -15,7 +15,6 @@ export const fetchMoviesAction = async (dispatch) => {
       type: SET_MOVIES,
       payload: res.data.content,
     });
-    console.log(res.data.content, "list movie");
   } catch (err) {
     console.log("errors", err.response?.data);
   }

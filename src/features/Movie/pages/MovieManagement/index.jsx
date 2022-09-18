@@ -5,9 +5,11 @@ import styles from "./style.module.css";
 import React from "react";
 
 import { useDispatch } from "react-redux";
-import { fetchMoviesAction } from "../action";
+
 import { useEffect } from "react";
-import TableMovie from "../components/TableMovie";
+
+import TableMovie from "features/movie/components/TableMovie";
+import { fetchMoviesAction } from "features/movie/action";
 
 // search
 
